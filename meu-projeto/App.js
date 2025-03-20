@@ -28,6 +28,10 @@ function alerta() {
 
       <Text style={{ fontSize: 40 }}>É isso ai</Text>
       <Text style={styles.textoGrande}>Eai minha rapaziada</Text>
+      <Text style={styles.textoGrande}>Eai minha rapaziada</Text>
+      <Text style={styles.textoGrande}>Eai minha rapaziada</Text>
+      <Text style={styles.textoGrande}>Eai minha rapaziada</Text>
+      <Text style={styles.textoGrande}>Eai minha rapaziada</Text>
 
       <Button title='Alerta' onPress={alerta}></Button>
       
