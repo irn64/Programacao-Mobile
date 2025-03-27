@@ -8,10 +8,13 @@ export default function ListaComponente() {
 
   return (
     <View style={styles.conteiner}>
+
+        {/*Resolve o problema de Warning*/}
+        {listaCarros.map((carro, index) => <Text key={index} >{carro}</Text>)}
       
         {listaCarros.map((carro) => <Text>{carro}</Text>)}
 
-        {
+        {     
             listaCarros.map(
                 (carro) => {
                     return (
