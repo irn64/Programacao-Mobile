@@ -17,7 +17,7 @@ export default function App() {
         <Tab.Navigator>
 
           <Tab.Screen 
-          name='HomeScreen' 
+          name='Escudo' 
           component={HomeScreen}
           options={{
             title: 'Home',
