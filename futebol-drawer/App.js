@@ -15,7 +15,7 @@ export default function App() {
   return (
     <PaperProvider>
       <NavigationContainer>
-        <Drawer.Navigator
+        <Drawer.Navigator 
           initialRouteName="Escudo"
           screenOptions={({ route }) => ({
             drawerIcon: ({ color, size }) => {
