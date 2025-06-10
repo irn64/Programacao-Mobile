@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, ScrollView } from 'react-native';
 import { Button, TextInput, HelperText, Text, Snackbar } from 'react-native-paper';
 import { validateEmail, validatePassword, formatPhone } from '../utils/validators';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 export default function RegisterScreen() {
@@ -30,9 +31,12 @@ export default function RegisterScreen() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (validate()) {
+      const userData = { name, email, phone, password };
+      await AsyncStorage.setItem('@user_data', JSON.stringify(userData));
       setVisibleSnackbar(true);
+      navigation.navigate('UserData');
     }
   };
 

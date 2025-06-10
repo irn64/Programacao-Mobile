@@ -1,7 +1,6 @@
 import { StyleSheet, Text, FlatList, Image } from 'react-native';
 import React from 'react';
 import { Button, Card } from 'react-native-paper';
-import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 
 const receitas = [
   {
@@ -76,7 +75,6 @@ const receitas = [
   }
   ];
 
-const Tab = createBottomTabNavigator()
 
   export default function HomeScreen({ navigation }) {
     return (

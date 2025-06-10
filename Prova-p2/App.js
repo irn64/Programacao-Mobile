@@ -3,7 +3,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
 
-// Telas
 import HomeScreen from './src/screens/HomeScreen';
 import OutraScreen from './src/screens/OutraScreen';
 import PerfilScreen from './src/screens/PerfilScreen';
@@ -12,7 +11,7 @@ import ConfigScreen from './src/screens/ConfigScreen';
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
-function TabNavigator() {
+function TabNavigator() { 
   return (
     <Tab.Navigator>
       <Tab.Screen name="Perfil" component={PerfilScreen} options={{tabBarIcon: ({color, size}) => <Ionicons name='person' color={color} size={size} />}}/>
