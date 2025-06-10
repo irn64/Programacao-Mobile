@@ -1,6 +1,7 @@
 import { StyleSheet, Text, FlatList, Image } from 'react-native';
 import React from 'react';
 import { Card } from 'react-native-paper';
+import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 
 
 const receitas = [

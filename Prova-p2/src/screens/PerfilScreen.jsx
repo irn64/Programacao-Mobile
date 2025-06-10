@@ -3,6 +3,7 @@ import { View, ScrollView } from 'react-native';
 import { Button, TextInput, HelperText, Text, Snackbar } from 'react-native-paper';
 import { validateEmail, validatePassword, formatPhone } from '../utils/validators';
 
+
 export default function RegisterScreen() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
